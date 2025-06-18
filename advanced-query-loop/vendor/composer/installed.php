@@ -3,7 +3,7 @@
         'name' => 'ryanwelcher/advanced-query-loop',
         'pretty_version' => 'dev-trunk',
         'version' => 'dev-trunk',
-        'reference' => '538ec2b8fedfbd395687cb387f463a8c23b5528c',
+        'reference' => '9fe3b9925fede0e347b8cba4bafad5d0d7a74977',
         'type' => 'wordpress-plugin',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -13,7 +13,7 @@
         'ryanwelcher/advanced-query-loop' => array(
             'pretty_version' => 'dev-trunk',
             'version' => 'dev-trunk',
-            'reference' => '538ec2b8fedfbd395687cb387f463a8c23b5528c',
+            'reference' => '9fe3b9925fede0e347b8cba4bafad5d0d7a74977',
             'type' => 'wordpress-plugin',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
