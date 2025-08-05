@@ -31,6 +31,7 @@ class ComposerStaticInit2c7947baa07b931fce151839e3d6ffbe
         'AdvancedQueryLoop\\Traits\\Date_Query' => __DIR__ . '/../..' . '/includes/Traits/Date_Query.php',
         'AdvancedQueryLoop\\Traits\\Disable_Pagination' => __DIR__ . '/../..' . '/includes/Traits/Disable_Pagination.php',
         'AdvancedQueryLoop\\Traits\\Exclude_Current' => __DIR__ . '/../..' . '/includes/Traits/Exclude_Current.php',
+        'AdvancedQueryLoop\\Traits\\Exclude_Posts' => __DIR__ . '/../..' . '/includes/Traits/Exclude_Posts.php',
         'AdvancedQueryLoop\\Traits\\Exclude_Taxonomies' => __DIR__ . '/../..' . '/includes/Traits/Exclude_Taxonomies.php',
         'AdvancedQueryLoop\\Traits\\Include_Posts' => __DIR__ . '/../..' . '/includes/Traits/Include_Posts.php',
         'AdvancedQueryLoop\\Traits\\Meta_Query' => __DIR__ . '/../..' . '/includes/Traits/Meta_Query.php',

@@ -10,6 +10,7 @@ return array(
     'AdvancedQueryLoop\\Traits\\Date_Query' => $baseDir . '/includes/Traits/Date_Query.php',
     'AdvancedQueryLoop\\Traits\\Disable_Pagination' => $baseDir . '/includes/Traits/Disable_Pagination.php',
     'AdvancedQueryLoop\\Traits\\Exclude_Current' => $baseDir . '/includes/Traits/Exclude_Current.php',
+    'AdvancedQueryLoop\\Traits\\Exclude_Posts' => $baseDir . '/includes/Traits/Exclude_Posts.php',
     'AdvancedQueryLoop\\Traits\\Exclude_Taxonomies' => $baseDir . '/includes/Traits/Exclude_Taxonomies.php',
     'AdvancedQueryLoop\\Traits\\Include_Posts' => $baseDir . '/includes/Traits/Include_Posts.php',
     'AdvancedQueryLoop\\Traits\\Meta_Query' => $baseDir . '/includes/Traits/Meta_Query.php',
