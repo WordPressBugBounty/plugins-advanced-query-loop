@@ -21,6 +21,8 @@ class Query_Params_Generator {
 	use Traits\Disable_Pagination;
 	use Traits\Tax_Query;
 	use Traits\Post_Parent;
+	use Traits\Enable_Caching;
+	use Traits\OrderBy;
 
 	/**
 	 * The list of allowed controls and their associated params in the query.
@@ -29,7 +31,7 @@ class Query_Params_Generator {
 		'additional_post_types'    => 'multiple_posts',
 		'taxonomy_query_builder'   => 'tax_query',
 		'post_meta_query'          => 'meta_query',
-		'post_order'               => 'post_order',
+		'post_order'               => 'orderBy',
 		'exclude_current_post'     => 'exclude_current',
 		'include_posts'            => 'include_posts',
 		'child_items_only'         => 'post_parent',
@@ -37,6 +39,7 @@ class Query_Params_Generator {
 		'date_query_relationship'  => 'date_query',
 		'pagination'               => 'disable_pagination',
 		'exclude_posts'            => 'exclude_posts',
+		'enable_caching'           => 'enable_caching',
 	);
 
 
@@ -59,7 +62,7 @@ class Query_Params_Generator {
 	 *
 	 * @var array
 	 */
-	private array $custom_args = array();
+	private array $custom_args = array( 'is_aql' => true );
 
 	/**
 	 * Construct method

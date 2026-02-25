@@ -1,10 +1,12 @@
 # Advanced Query Loop
 
 ![](https://github.com/ryanwelcher/advanced-query-loop/actions/workflows/phpunit.yml/badge.svg?branch=trunk)
+![](https://github.com/ryanwelcher/advanced-query-loop/actions/workflows/static-linting.yml/badge.svg?branch=trunk)
+![](https://github.com/ryanwelcher/advanced-query-loop/actions/workflows/e2e.yml/badge.svg?branch=trunk)
 
 ## Description
 
-This plugin introduces a Query Loop block variation that will empower users to be able to do much more complicated queries with the Query Loop block, such number of posts to display and post meta
+This plugin introduces a Query Loop block variation that will empower users to be able to do much more complicated queries with the Query Loop block, such as taxonomy queries, post meta queries, date queries, post ordering, and more
 
 ### Support/Issues
 
@@ -28,10 +30,6 @@ Choose the posts you want to display manually or only the children of the curren
 
 Remove the current post from the query.
 
-#### Exclude posts by category
-
-Choose to exclude posts from a list of categories.
-
 #### Exclude posts list
 
 Curate a list of posts to exclude from the query.
@@ -49,21 +47,25 @@ Query items before/after the current or selected or choose to show the post from
 Sort in ascending or descending order by:
 
 -   Author
+-   Comment Count
 -   Date
+-   Included Posts
 -   Last Modified Date
--   Title
+-   Menu Order (props to @jvanja)
 -   Meta Value
 -   Meta Value Num
--   Random
--   Menu Order (props to @jvanja)
 -   Name (props @philbee)
 -   Post ID (props to @markhowellsmead)
-
-**Please note that this is a slight duplication of the existing sorting controls. They both work interchangeably but it just looks a bit odd in the UI**
+-   Random
+-   Title
 
 #### Disable Pagination
 
-Improve the performance of the query by disabling pagination. This is done automatically when there is now Pagination block in teh Post Template.
+Improve the performance of the query by disabling pagination.
+
+#### Enable Caching
+
+Store query results in a transient for one hour to reduce database load on subsequent page loads. The caching toggle is unavailable when the order is set to Random, and switching to Random order will clear any existing caching setting. Found in the **AQL: Performance Controls** panel.
 
 ## Filtering the available controls
 
@@ -95,11 +97,13 @@ add_filter(
 -   `'post_meta_query'`
 -   `'post_order'`
 -   `'exclude_current_post'`
+-   `'exclude_posts'`
 -   `'include_posts'`
 -   `'child_items_only'`
 -   `'date_query_dynamic_range'`
 -   `'date_query_relationship'`
 -   `'pagination'`
+-   `'enable_caching'`
 
 ## Extending AQL
 

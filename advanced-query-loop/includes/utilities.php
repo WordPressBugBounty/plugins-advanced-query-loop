@@ -7,6 +7,9 @@
 
 namespace AdvancedQueryLoop\Utils;
 
+// Prevent direct access.
+defined( 'ABSPATH' ) || exit;
+
 /**
  * Helper to determine if the Gutenberg plugin is installed and if so, if it is at or higher a given version.
  *
@@ -33,4 +36,3 @@ function is_core_version_or_higher( string $version ) {
 	$core = get_bloginfo( 'version' );
 	return version_compare( $core, $version, '>=' );
 }
-

@@ -13,14 +13,14 @@ class ComposerStaticInit2c7947baa07b931fce151839e3d6ffbe
     );
 
     public static $prefixLengthsPsr4 = array (
-        'A' => 
+        'A' =>
         array (
             'AdvancedQueryLoop\\' => 18,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'AdvancedQueryLoop\\' => 
+        'AdvancedQueryLoop\\' =>
         array (
             0 => __DIR__ . '/../..' . '/includes',
         ),
@@ -30,12 +30,14 @@ class ComposerStaticInit2c7947baa07b931fce151839e3d6ffbe
         'AdvancedQueryLoop\\Query_Params_Generator' => __DIR__ . '/../..' . '/includes/Query_Params_Generator.php',
         'AdvancedQueryLoop\\Traits\\Date_Query' => __DIR__ . '/../..' . '/includes/Traits/Date_Query.php',
         'AdvancedQueryLoop\\Traits\\Disable_Pagination' => __DIR__ . '/../..' . '/includes/Traits/Disable_Pagination.php',
+        'AdvancedQueryLoop\\Traits\\Enable_Caching' => __DIR__ . '/../..' . '/includes/Traits/Enable_Caching.php',
         'AdvancedQueryLoop\\Traits\\Exclude_Current' => __DIR__ . '/../..' . '/includes/Traits/Exclude_Current.php',
         'AdvancedQueryLoop\\Traits\\Exclude_Posts' => __DIR__ . '/../..' . '/includes/Traits/Exclude_Posts.php',
         'AdvancedQueryLoop\\Traits\\Exclude_Taxonomies' => __DIR__ . '/../..' . '/includes/Traits/Exclude_Taxonomies.php',
         'AdvancedQueryLoop\\Traits\\Include_Posts' => __DIR__ . '/../..' . '/includes/Traits/Include_Posts.php',
         'AdvancedQueryLoop\\Traits\\Meta_Query' => __DIR__ . '/../..' . '/includes/Traits/Meta_Query.php',
         'AdvancedQueryLoop\\Traits\\Multiple_Posts' => __DIR__ . '/../..' . '/includes/Traits/Multiple_Posts.php',
+        'AdvancedQueryLoop\\Traits\\OrderBy' => __DIR__ . '/../..' . '/includes/Traits/OrderBy.php',
         'AdvancedQueryLoop\\Traits\\Post_Parent' => __DIR__ . '/../..' . '/includes/Traits/Post_Parent.php',
         'AdvancedQueryLoop\\Traits\\Tax_Query' => __DIR__ . '/../..' . '/includes/Traits/Tax_Query.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',

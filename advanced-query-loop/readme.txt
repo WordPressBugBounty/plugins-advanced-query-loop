@@ -3,7 +3,7 @@ Contributors: welcher
 Tags: Query Loop, Custom Queries, Advanced Queries, Post Meta, Taxonomy
 Requires at least: 6.2
 Tested up to: 6.9
-Stable tag: 4.3.0
+Stable tag: 4.4.0
 Requires PHP: 7.4
 License: GPL v2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -52,7 +52,6 @@ Take full control over which posts appear in your query:
 Keep your queries clean and relevant:
 * **Exclude current post**: Automatically hide the post being viewed
 * **Exclude a list of posts**: Curate a list of posts to exclude from the query
-* **Category filtering**: Exclude posts from specific categories
 
 ==== 🔍 Advanced Post Meta Queries ====
 
@@ -83,12 +82,13 @@ Sort your content exactly how you want:
 * **Name**: Sort by post slug
 * **Post ID**: Sort by post ID
 * **Comment Count**: Sort by engagement
+* **Included Posts**: Sort by post inclusion order
 
 ==== ⚡ Performance Optimization ====
 
-* **Smart pagination**: Automatically disable pagination when not needed
+* **Disable pagination**: Reduce query overhead by turning off pagination when it is not needed
+* **Enable caching**: Store query results in a transient for one hour to reduce database load on subsequent page loads. The caching toggle is unavailable when the order is set to Random, and switching to Random order will clear any existing caching setting
 * **Efficient queries**: Optimized database queries for better performance
-* **Caching friendly**: Works seamlessly with popular caching plugins
 
 === Customization & Extensibility ===
 
@@ -116,11 +116,13 @@ add_filter(
 * `'post_meta_query'` - Meta field queries
 * `'post_order'` - Sorting options
 * `'exclude_current_post'` - Current post exclusion
+* `'exclude_posts'` - Exclude a curated list of posts
 * `'include_posts'` - Manual post inclusion
 * `'child_items_only'` - Child post filtering
 * `'date_query_dynamic_range'` - Date range queries
 * `'date_query_relationship'` - Date query logic
 * `'pagination'` - Pagination controls
+* `'enable_caching'` - Query result caching
 
 ==== Developer-Friendly ====
 
@@ -154,6 +156,18 @@ Advanced Query Loop is built with developers in mind:
 3. Query posts before a date, after a date or between two dates.
 
 == Changelog ==
+
+= 4.4.0 =
+* Add transient caching for query results and related UI control.
+* Add current post ID and post type to context for SlotFill extensions.
+* Add E2E tests using Playground and expand unit test coverage.
+* Add static linting for PHP and JavaScript.
+* Fix and improve caching controls.
+* Fix TypeError crash when window.aql.allowedControls is undefined.
+* Fix Exclude Current Post for synced patterns and templates.
+* Fix Post ID ordering not working on the frontend.
+* Fix post meta fetching to include all selected post types.
+* Small fixes to pass Plugin Check plugin tests.
 
 = 4.3.0 =
 * Exclude posts (props @darylldoyle, @Pulsar-X).
